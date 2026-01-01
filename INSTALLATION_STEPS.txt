@@ -1,0 +1,124 @@
+╔════════════════════════════════════════════════════════════════════════╗
+║                    VIRTUAL MOUSE - INSTALLATION STEPS                   ║
+║                      For Complete Beginners                             ║
+╚════════════════════════════════════════════════════════════════════════╝
+
+BEFORE YOU START:
+✓ Have Python 3.7+ installed
+✓ Have a working webcam
+✓ Have good lighting in your room
+✓ Have internet connection
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: INSTALL PYTHON
+
+1. Go to https://www.python.org/downloads/
+2. Download Python 3.11 (or latest)
+3. Run the installer
+4. ✓ IMPORTANT: Check "Add Python to PATH"
+5. Click "Install Now"
+6. Verify: Open PowerShell and type:
+   python --version
+   Should show: Python 3.11.x or higher
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 2: GET THE PROJECT
+
+Option A - Using Git (if installed):
+  git clone git@github.com:Abhayrana84/virtual-mouse.git
+  cd virtual-mouse
+
+Option B - Download ZIP:
+  1. Go to: https://github.com/Abhayrana84/virtual-mouse
+  2. Click green "Code" button
+  3. Click "Download ZIP"
+  4. Extract to Desktop
+  5. Right-click folder → "Open PowerShell here"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 3: INSTALL DEPENDENCIES
+
+In PowerShell/Command Prompt, run:
+
+  pip install -r requirements.txt
+
+Wait for completion (2-3 minutes)
+
+You should see message:
+  "Successfully installed opencv-python mediapipe numpy pyautogui pynput"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 4: RUN THE APPLICATION
+
+In PowerShell/Command Prompt, run:
+
+  python virtual_mouse_working.py
+
+Camera window will open!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+QUICK REFERENCE - GESTURES:
+
+Move Hand         → Cursor moves
+Index+Middle      → Left click
+3 Fingers Up      → Right click
+Thumb+Index       → Scroll
+Fist              → Screenshot
+ESC Key           → Exit
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TROUBLESHOOTING:
+
+Q: "python is not recognized"
+A: Reinstall Python with "Add to PATH" checked
+
+Q: "No module named 'mediapipe'"
+A: Run: pip install --upgrade -r requirements.txt
+
+Q: "Camera won't open"
+A: Check camera permissions or try restarting
+
+Q: "Hand not detected"
+A: Improve lighting! This is the most common issue.
+
+Q: Missing "hand_landmarker.task"
+A: Run the app again (auto-downloads on first run)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EASIEST WAY TO RUN NEXT TIME:
+
+1. Create new file named: start.bat
+2. Paste this:
+   @echo off
+   python virtual_mouse_working.py
+
+3. Double-click start.bat to run!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+FILES IN FOLDER (what you need):
+
+✓ virtual_mouse_working.py  ← Main program (run this)
+✓ util.py                   ← Helper functions
+✓ requirements.txt          ← List of packages
+✓ hand_landmarker.task      ← AI model (auto-downloads)
+✓ README.md                 ← Full documentation
+✓ QUICK_START.md            ← Quick guide
+✓ INSTALLATION_STEPS.txt    ← This file
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+THAT'S IT! You're ready to go! 🚀
+
+Any issues? Read QUICK_START.md or README.md
+
+Enjoy your Virtual Mouse! 🖱️✋
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
